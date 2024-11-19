@@ -21,8 +21,8 @@ console.log(`Welcome to Currency Converter!
 What do you want to convert?`);
 
 const conversion = function(amount, currencyFrom, currencyTo) {
-    const fromUSDAmt = (1 / currencies[currencyFrom]) * amount;
-    const toUSDAmt = fromUSDAmt * currencies[currencyTo];
+    const fromUSDAmt = (1 / currencies[currencyFrom]) * amount;  // Using unitary method -> (1 / 0.89) * 115. => How much dollar 115 EUR is.
+    const toUSDAmt = fromUSDAmt * currencies[currencyTo];  // How much GBP 115 Dollar is.
     return toUSDAmt.toFixed(4);
 }
 
